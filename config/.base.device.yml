@@ -1,0 +1,23 @@
+labels:
+    device: "true"
+
+env:
+    DATABASE_HOST: "environment_mongo"
+    DATABASE_PORT: 27017
+
+    APPLICATION_HOST: "0.0.0.0"
+    APPLICATION_PORT: 5000
+
+    # MINIO_ENDPOINT: "environment_minio"
+    MINIO_ENDPOINT: "minio"
+    MINIO_ACCESS_KEY: ""
+    MINIO_SECRET_KEY: ""
+
+    CONNECTOR_URL: https://connector.meowthland.ru
+
+networks:
+    - device-environment
+    - device-proxy
+    # - app-environment-net
+mounts:
+    - user_data:/opt/userdata
