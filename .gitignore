@@ -11,3 +11,5 @@
 database.db
 
 playground.py
+
+*.pem
